@@ -3,9 +3,9 @@ print('Bult-In Functions')
 print('')
 print('1: Pow')
 print('2: Filter')
-print('3: getattr')
-print('4: staticmethod')
-print('5: range')
+print('3: Getattr')
+print('4: Zip')
+print('5: Iter')
 
 opccion=input('Que funcion quiere ver: ')
 opccion=int(opccion)
@@ -66,6 +66,28 @@ if opccion==3:
     print ('____________________________')
 
 if opccion==4:
+    print ('____________________________')
+    print ('Built-in Functions (Zip)')
+    print ('toma como argumento dos o más objetos iterables (idealmente cada uno de ellos con la misma cantidad de elementos)')
+    print ('')
+    ropas = ["Pantalon", "Blusa", "Chaqueta", "Cantidad"]
+    cantidades = [14, 14, 27, 24]
+    list(zip(ropas, cantidades))   
+    for ropa, cantidad in zip(ropas, cantidades):
+        print ("cantidad en el almacen de {}: {} ".format(ropa, cantidad))
+
+if opccion==5:
+    print ('____________________________')
+    print ('Built-in Functions (Iter)')
+    print ('crea un objeto que puede ser iterado un elemento a la vez.')
+    print ('')
+
+    lista = [10, 100, 1000, 10000]
+    iterador = iter(lista)
+    comida = iter(["perro caliente", "hamburguesa", "salchipapa"])
+    print(next(comida))
+    print(next(comida))
+    print(next(comida))
 	
 
     
